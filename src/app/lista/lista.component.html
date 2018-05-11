@@ -1,0 +1,13 @@
+<div class="text-box">
+  <label> Nuevo elemento:</label>
+  <input [(ngModel)]='tarea.nombre' type="text" placeholder="Tarea">
+  <button (click)="agregar()">Agregar</button>
+</div>
+<h2>Mis elementos</h2>
+
+
+
+<ol>
+  <!-- <li>{{tarea.nombre}}</li> -->
+ <li *ngFor = "let tarea of tareas"> <span>{{tarea.nombre}}</span><span> <input type="checkbox"></span></li>
+</ol>
