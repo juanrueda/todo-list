@@ -1,3 +1,80 @@
-.hecho{
-  text-decoration: line-through;
+h2{
+  margin-top: 50px;
+  text-align: center;
+  font-family: arial, "times new roman";
+}
+
+body{
+  font-style: arial;
+}
+
+.text-box{
+  text-align: center;
+}
+
+.text-box input{
+  background-color: white;
+  padding: 10px;
+  display: inline-block;
+  font-size: 15px;
+  border-style: solid;
+  border-color:  #aab7b8;
+}
+
+.text-box input:focus{
+  border-color: #85c1e9;
+}
+
+input[type=text]{
+  color: black;
+}
+
+.agregar{
+   background-color:  #c39bd3  ;
+   border: none;
+   color: white;
+   font-size: 15px;
+   padding: 10px;
+}
+
+.agregar:hover{
+  background-color:   #9b59b6 ;
+}
+
+.quitar{
+  background-color: #f1948a   ;
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+.quitar:hover{
+  background-color:   #b03a2e  ;
+}
+
+.lista{
+  text-align: center;
+}
+
+.lista table {
+  margin: 0 auto;
+  text-align: left;
+}
+.chk:checked + span{
+ text-decoration:line-through
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+.nombre{
+  padding-left: 20px;
+}
+
+.chk{
+  margin-right: 10px;
 }

@@ -18,13 +18,18 @@ export class ListaComponent implements OnInit {
   }
 
   agregar() {
-      //console.log(this.tarea.nombre);
+    if(this.tarea.nombre.length > 0){
       this.tarea.estado = false;
       this.tareas.push(this.tarea);
-
       this.tarea = new Tarea();
-      //console.log(this.tareas[0].nombre);
     }
+  }
+
+  borrar(tarea) {
+    var pos = this.tareas.indexOf(tarea);
+    this.tareas.splice(pos, 1);
+  }
+
 
 
 }
