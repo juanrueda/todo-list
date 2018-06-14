@@ -30,6 +30,13 @@ export class ListaComponent implements OnInit {
     this.tareas.splice(pos, 1);
   }
 
+  value = '';
+
+  onEnter(value: string) {
+    this.value =  value;
+    this.agregar();
+  }
+
 
 
 }

@@ -1,6 +1,6 @@
 <div class="text-box">
-  <input [(ngModel)]='tarea.nombre' type="text" placeholder="Tarea">
-  <button (click)="agregar()" class="agregar">Agregar</button>
+  <input [(ngModel)]='tarea.nombre' type="text" placeholder="Tarea"  #box (keyup.enter)="onEnter(box.value)" >
+  <button  (click)="agregar()" class="agregar">Agregar</button>
 </div>
 
 <div *ngIf="tareas.length > 0" class="lista">
